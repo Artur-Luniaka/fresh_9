@@ -532,44 +532,6 @@
 
 /* Accessibility Improvements - Animations removed, keeping transitions */
 
-/* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --royal-white: #1a1a1a;
-    --royal-black: #ffffff;
-    --royal-shadow: rgba(255, 255, 255, 0.1);
-    --dark-bg-primary: #0a0a0a;
-    --dark-bg-secondary: #1a1a1a;
-    --dark-card-bg: #2a2a2a;
-    --dark-border: #444;
-  }
-
-  body {
-    background: linear-gradient(
-      135deg,
-      var(--dark-bg-primary),
-      var(--dark-bg-secondary)
-    );
-  }
-
-  .feature-card,
-  .control-item,
-  .review-card,
-  .item-card,
-  .stat-card,
-  .royal-contact-form {
-    background: var(--dark-card-bg);
-    color: var(--royal-black);
-  }
-
-  .form-input,
-  .form-textarea {
-    background: var(--dark-card-bg);
-    color: var(--royal-black);
-    border-color: var(--dark-border);
-  }
-}
-
 /* Focus Styles for Accessibility */
 .nav-link:focus,
 .play-button:focus {
