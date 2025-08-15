@@ -190,40 +190,7 @@ function initializeSmoothScrolling() {
 
 // Animated counters removed - keeping only transitions and hover effects
 
-// Cookie consent
-function initializeCookieConsent() {
-  const cookieConsent = localStorage.getItem("cookieConsent");
 
-  if (!cookieConsent) {
-    const consentBanner = document.createElement("div");
-    consentBanner.className = "cookie-consent-banner";
-    consentBanner.innerHTML = `
-            <div class="consent-content">
-                <p>🍪 We use cookies to enhance your royal experience!</p>
-                <div class="consent-buttons">
-                    <button class="consent-accept dress-sprint">Accept</button>
-                    <button class="consent-decline mud-dodge">Decline</button>
-                </div>
-            </div>
-        `;
-
-    document.body.appendChild(consentBanner);
-
-    // Handle consent
-    const acceptBtn = consentBanner.querySelector(".consent-accept");
-    const declineBtn = consentBanner.querySelector(".consent-decline");
-
-    acceptBtn.addEventListener("click", () => {
-      localStorage.setItem("cookieConsent", "accepted");
-      consentBanner.remove();
-    });
-
-    declineBtn.addEventListener("click", () => {
-      localStorage.setItem("cookieConsent", "declined");
-      consentBanner.remove();
-    });
-  }
-}
 
 // Initialize everything when DOM is loaded
 document.addEventListener("DOMContentLoaded", function () {
@@ -231,7 +198,6 @@ document.addEventListener("DOMContentLoaded", function () {
   initializePlayButton();
   initializeContactForm();
   initializeSmoothScrolling();
-  initializeCookieConsent();
 
   // Set current year in footer
   const currentYearElement = document.getElementById("current-year");

@@ -906,57 +906,7 @@ body {
   opacity: 1;
 }
 
-/* Cookie Consent Banner */
-.cookie-consent-banner {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: var(--royal-gradient);
-  color: var(--royal-white);
-  padding: 1rem 2rem;
-  z-index: 9999;
-  box-shadow: 0 -4px 20px var(--royal-shadow);
-}
 
-.consent-content {
-  max-width: 1280px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-}
-
-.consent-content p {
-  margin: 0;
-  font-weight: 500;
-}
-
-.consent-buttons {
-  display: flex;
-  gap: 1rem;
-}
-
-.consent-accept,
-.consent-decline {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 25px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.consent-accept:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px var(--royal-shadow);
-}
-
-.consent-decline:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px var(--royal-shadow);
-}
 
 /* Floating Sparkles - Animation removed */
 
@@ -1053,16 +1003,6 @@ body {
 
 /* Responsive adjustments for cookie banner */
 @media (max-width: 767px) {
-  .consent-content {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-  }
-
-  .consent-buttons {
-    justify-content: center;
-  }
-
   .royal-notification {
     right: 10px;
     left: 10px;
