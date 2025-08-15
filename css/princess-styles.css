@@ -1,0 +1,1565 @@
+/* Princess Run 3D - Royal CSS Variables */
+:root {
+  --princess-pink: #ff69b4;
+  --royal-gold: #ffd700;
+  --charisma-glow: #ff1493;
+  --sprint-vibe: #00ced1;
+  --royal-purple: #9370db;
+  --crown-yellow: #ffff00;
+  --mud-brown: #8b4513;
+  --royal-white: #ffffff;
+  --royal-black: #2c2c2c;
+  --royal-shadow: rgba(0, 0, 0, 0.2);
+  --royal-gradient: linear-gradient(
+    135deg,
+    var(--princess-pink),
+    var(--royal-purple)
+  );
+  --charisma-gradient: linear-gradient(
+    45deg,
+    var(--charisma-glow),
+    var(--sprint-vibe)
+  );
+  --body-bg-light: #f0f8ff;
+  --body-bg-pink: #ffe4e1;
+  --border-light: #e0e0e0;
+  --success-green: #4caf50;
+  --success-green-dark: #45a049;
+  --hover-gold: #ffed4e;
+  --overlay-dark: rgba(0, 0, 0, 0.8);
+  --overlay-light: rgba(255, 255, 255, 0.95);
+  --overlay-lighter: rgba(255, 255, 255, 0.9);
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-medium: rgba(0, 0, 0, 0.3);
+  --shadow-dark: rgba(0, 0, 0, 0.6);
+  --princess-pink-transparent: rgba(255, 105, 180, 0.3);
+  --royal-purple-transparent: rgba(147, 112, 219, 0.8);
+  --princess-pink-transparent-2: rgba(255, 105, 180, 0.8);
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--royal-black);
+  background: linear-gradient(
+    135deg,
+    var(--body-bg-light),
+    var(--body-bg-pink)
+  );
+  min-height: 100vh;
+}
+
+/* Royal Header Styles */
+.royal-header {
+  background: var(--royal-gradient);
+  box-shadow: 0 4px 20px var(--royal-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.royal-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--royal-white);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.royal-logo:hover {
+  color: var(--royal-gold);
+  transform: scale(1.05);
+}
+
+.crown-icon {
+  font-size: 2rem;
+}
+
+.logo-text {
+  text-shadow: 2px 2px 4px var(--royal-shadow);
+}
+
+/* Navigation Styles */
+.royal-navigation .nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: var(--royal-white);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+}
+
+.nav-link:hover {
+  background: var(--royal-white);
+  color: var(--princess-pink);
+}
+
+/* Main Content Styles */
+.royal-main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--royal-purple);
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px var(--royal-shadow);
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--charisma-gradient);
+  border-radius: 2px;
+}
+
+/* Hero Section */
+.pixel-arena-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80vh;
+  background: var(--charisma-gradient);
+  border-radius: 30px;
+  padding: 4rem;
+  margin-bottom: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  flex: 1;
+  z-index: 2;
+}
+
+.game-title {
+  font-size: 4rem;
+  color: var(--royal-white);
+  margin-bottom: 1rem;
+  text-shadow: 3px 3px 6px var(--royal-shadow);
+}
+
+.game-slogan {
+  font-size: 1.5rem;
+  color: var(--royal-white);
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  text-shadow: 2px 2px 4px var(--royal-shadow);
+}
+
+.start-run-button {
+  background: var(--royal-gold);
+  color: var(--royal-black);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px var(--royal-shadow);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.start-run-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px var(--royal-shadow);
+  background: var(--crown-yellow);
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px var(--royal-shadow);
+}
+
+/* Royal Features Grid */
+.royal-features {
+  margin-bottom: 4rem;
+}
+
+.royal-features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.royal-feature-card {
+  background: var(--royal-white);
+  padding: 2.5rem;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px var(--royal-shadow);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.royal-feature-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--charisma-gradient);
+}
+
+.royal-feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px var(--royal-shadow);
+  border-color: var(--princess-pink);
+}
+
+.royal-feature-title {
+  font-size: 1.8rem;
+  color: var(--royal-purple);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px var(--royal-shadow);
+}
+
+.royal-feature-description {
+  color: var(--royal-black);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.royal-feature-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.royal-feature-tag {
+  background: var(--charisma-gradient);
+  color: var(--royal-white);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px var(--royal-shadow);
+  transition: all 0.3s ease;
+}
+
+.royal-feature-tag:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px var(--royal-shadow);
+}
+
+/* Princess Guide Section */
+.princess-guide {
+  margin-bottom: 4rem;
+}
+
+.royal-controls-guide {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.royal-control-item {
+  background: linear-gradient(var(--overlay-light), var(--overlay-lighter)),
+    url("../public/princess-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2.5rem;
+  border-radius: 25px;
+  text-align: center;
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  box-shadow: 0 8px 25px var(--royal-shadow);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.royal-control-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--charisma-gradient);
+}
+
+.royal-control-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px var(--royal-shadow);
+  border-color: var(--princess-pink);
+}
+
+.royal-control-title {
+  color: var(--royal-purple);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px var(--royal-shadow);
+  position: relative;
+  z-index: 2;
+}
+
+.royal-control-description {
+  color: var(--royal-black);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.royal-control-tips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.royal-tip {
+  background: var(--charisma-gradient);
+  color: var(--royal-white);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px var(--royal-shadow);
+  transition: all 0.3s ease;
+}
+
+.royal-tip:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px var(--royal-shadow);
+}
+
+/* Royal Testimonials */
+.royal-testimonials {
+  margin-bottom: 4rem;
+}
+
+.royal-testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.royal-testimonial-card {
+  background: var(--charisma-gradient);
+  padding: 2.5rem;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px var(--royal-shadow);
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.royal-testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: -15px;
+  left: 25px;
+  font-size: 5rem;
+  color: var(--royal-white);
+  opacity: 0.2;
+  font-family: serif;
+}
+
+.royal-testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px var(--royal-shadow);
+  border-color: var(--royal-gold);
+}
+
+.royal-testimonial-text {
+  color: var(--royal-white);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
+}
+
+.royal-testimonial-author {
+  color: var(--royal-gold);
+  font-weight: 700;
+  text-align: right;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 2px var(--royal-shadow);
+  position: relative;
+  z-index: 2;
+}
+
+/* Royal Wardrobe Collection */
+.royal-wardrobe-collection {
+  margin-bottom: 4rem;
+}
+
+.royal-wardrobe-layout {
+  display: flex;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.royal-wardrobe-cards {
+  flex: 0 0 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.royal-wardrobe-card {
+  background: var(--royal-white);
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px var(--royal-shadow);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.royal-wardrobe-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--charisma-gradient);
+}
+
+.royal-wardrobe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px var(--royal-shadow);
+  border-color: var(--princess-pink);
+}
+
+.royal-wardrobe-title {
+  color: var(--royal-purple);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 2px var(--royal-shadow);
+}
+
+.royal-wardrobe-effect {
+  color: var(--royal-black);
+  line-height: 1.4;
+  font-size: 0.85rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.royal-wardrobe-info {
+  flex: 0 0 60%;
+  background: var(--royal-white);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px var(--royal-shadow);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.royal-wardrobe-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--charisma-gradient);
+}
+
+.royal-wardrobe-info-title {
+  color: var(--royal-purple);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px var(--royal-shadow);
+}
+
+.royal-wardrobe-info-text {
+  color: var(--royal-black);
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.royal-wardrobe-info-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Royal Progress & Charisma Hub */
+.royal-progress-charisma {
+  margin-bottom: 4rem;
+}
+
+.royal-stats-container {
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.royal-stat-card {
+  background: linear-gradient(var(--overlay-light), var(--overlay-lighter)),
+    url("../public/princess-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2.5rem;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px var(--royal-shadow);
+  flex: 1;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.royal-stat-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--charisma-gradient);
+}
+
+.royal-stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px var(--royal-shadow);
+  border-color: var(--princess-pink);
+}
+
+.royal-stat-number {
+  font-size: 2.5rem;
+  color: var(--charisma-glow);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px var(--royal-shadow);
+  position: relative;
+  z-index: 2;
+}
+
+.royal-stat-label {
+  color: var(--royal-purple);
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px var(--royal-shadow);
+  position: relative;
+  z-index: 2;
+}
+
+/* Royal Footer */
+.footer-royal {
+  background: var(--royal-gradient);
+  color: var(--royal-white);
+  margin-top: 4rem;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 2rem 2rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-section {
+  min-width: 250px;
+}
+
+.footer-title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--royal-gold);
+  font-weight: 700;
+  text-shadow: 2px 2px 4px var(--royal-shadow);
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-link {
+  color: var(--royal-white);
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px var(--royal-shadow);
+}
+
+.footer-link:hover {
+  color: var(--royal-gold);
+}
+
+.footer-contact-info .footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-contact-icon {
+  font-size: 1.2rem;
+}
+
+.footer-contact-link {
+  color: var(--royal-white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px var(--royal-shadow);
+}
+
+.footer-contact-link:hover {
+  color: var(--royal-gold);
+}
+
+.footer-contact-text {
+  font-weight: 600;
+  text-shadow: 1px 1px 2px var(--royal-shadow);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--overlay-lighter);
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-copyright-text {
+  color: var(--royal-white);
+  font-weight: 600;
+  text-shadow: 1px 1px 2px var(--royal-shadow);
+  font-size: 15px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+/* Form Styles */
+.royal-contact-form {
+  background: var(--royal-white);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px var(--royal-shadow);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--royal-purple);
+  font-weight: 600;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid var(--border-light);
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-textarea {
+  resize: none;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--princess-pink);
+  box-shadow: 0 0 10px var(--princess-pink-transparent);
+}
+
+.submit-button {
+  background: var(--charisma-gradient);
+  color: var(--royal-white);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--royal-shadow);
+}
+
+/* Map Container */
+.map-container {
+  background: var(--royal-white);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px var(--royal-shadow);
+}
+
+/* Removed all animations - keeping only transitions and hover effects */
+
+/* Utility Classes */
+.dress-sprint {
+  transition: all 0.3s ease;
+}
+
+.dress-sprint:hover {
+  transform: translateY(-2px);
+}
+
+.charisma-hub {
+  background: var(--charisma-gradient);
+  color: var(--royal-white);
+}
+
+.mud-dodge {
+  background: var(--mud-brown);
+  color: var(--royal-white);
+}
+
+.royal-runway {
+  background: var(--royal-gradient);
+  color: var(--royal-white);
+}
+
+/* Processing Overlay */
+.processing-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--overlay-dark);
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.processing-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.processing-dots {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.processing-dot {
+  width: 20px;
+  height: 20px;
+  background: var(--princess-pink);
+  border-radius: 50%;
+  animation: processingPulse 1.5s infinite ease-in-out;
+}
+
+.processing-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.processing-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes processingPulse {
+  0%,
+  60%,
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  30% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+.processing-text {
+  color: var(--royal-white);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Simple Notification System */
+.simple-notification {
+  position: fixed;
+  bottom: 30px;
+  left: 20px;
+  right: 20px;
+  transform: translateY(100px);
+  background: linear-gradient(
+    45deg,
+    var(--success-green),
+    var(--success-green-dark)
+  );
+  color: var(--royal-white);
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px var(--royal-shadow);
+  z-index: 10001;
+  opacity: 0;
+  transition: all 0.3s ease;
+  max-width: none;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px var(--shadow-medium);
+}
+
+.simple-notification.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Cookie Consent Banner */
+.cookie-consent-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--royal-gradient);
+  color: var(--royal-white);
+  padding: 1rem 2rem;
+  z-index: 9999;
+  box-shadow: 0 -4px 20px var(--royal-shadow);
+}
+
+.consent-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.consent-content p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.consent-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.consent-accept,
+.consent-decline {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.consent-accept:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px var(--royal-shadow);
+}
+
+.consent-decline:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px var(--royal-shadow);
+}
+
+/* Floating Sparkles - Animation removed */
+
+/* Improvement and Diary Cards */
+.improvement-card,
+.diary-card {
+  background: var(--royal-white);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px var(--royal-shadow);
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.improvement-card:hover,
+.diary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px var(--royal-shadow);
+}
+
+.improvement-title,
+.diary-title {
+  color: var(--royal-purple);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.improvement-date,
+.diary-date {
+  color: var(--princess-pink);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.improvement-description,
+.diary-story {
+  color: var(--royal-black);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.diary-author {
+  color: var(--sprint-vibe);
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* Contact Detail Items */
+.contact-detail-item {
+  background: var(--royal-white);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px var(--royal-shadow);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-detail-item .contact-icon {
+  font-size: 2rem;
+  color: var(--princess-pink);
+}
+
+.contact-detail-item .contact-info h3 {
+  color: var(--royal-purple);
+  margin-bottom: 0.5rem;
+}
+
+.contact-detail-item .contact-info p {
+  color: var(--royal-black);
+  margin: 0;
+}
+
+.contact-detail-item .contact-info a {
+  color: var(--princess-pink);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-detail-item .contact-info a:hover {
+  color: var(--charisma-glow);
+}
+
+.contact-detail-item .contact-description {
+  color: var(--royal-black);
+  font-size: 0.9rem;
+  margin-top: 0.8rem;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments for cookie banner */
+@media (max-width: 767px) {
+  .consent-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .consent-buttons {
+    justify-content: center;
+  }
+
+  .royal-notification {
+    right: 10px;
+    left: 10px;
+    max-width: none;
+    transform: translateY(-100px);
+  }
+
+  .royal-notification.show {
+    transform: translateY(0);
+  }
+}
+
+/* Legal Pages Styling */
+.disclaimer-content,
+.cookies-content,
+.privacy-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.disclaimer-content h1,
+.cookies-content h1,
+.privacy-content h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--royal-purple);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px var(--royal-shadow);
+}
+
+.disclaimer-text,
+.cookies-text,
+.privacy-text {
+  background: var(--royal-white);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px var(--royal-shadow);
+  line-height: 1.8;
+}
+
+.disclaimer-text h2,
+.cookies-text h2,
+.privacy-text h2 {
+  color: var(--royal-purple);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.disclaimer-text h3,
+.cookies-text h3,
+.privacy-text h3 {
+  color: var(--princess-pink);
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
+  border-bottom: 2px solid var(--royal-gold);
+  padding-bottom: 0.5rem;
+}
+
+.disclaimer-text h4,
+.cookies-text h4,
+.privacy-text h4 {
+  color: var(--sprint-vibe);
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.disclaimer-text p,
+.cookies-text p,
+.privacy-text p {
+  margin-bottom: 1rem;
+  color: var(--royal-black);
+}
+
+.disclaimer-text ul,
+.cookies-text ul,
+.privacy-text ul {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.disclaimer-text li,
+.cookies-text li,
+.privacy-text li {
+  margin-bottom: 0.5rem;
+  color: var(--royal-black);
+}
+
+.disclaimer-text strong,
+.cookies-text strong,
+.privacy-text strong {
+  color: var(--royal-purple);
+  font-weight: 600;
+}
+
+.disclaimer-date,
+.cookies-date,
+.privacy-date {
+  text-align: center;
+  font-style: italic;
+  color: var(--princess-pink);
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--royal-gold);
+}
+
+/* Cookie Types Grid */
+.cookie-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.cookie-type {
+  background: var(--royal-white);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px var(--royal-shadow);
+  flex: 1;
+  min-width: 250px;
+  border-left: 4px solid var(--princess-pink);
+}
+
+.cookie-type h4 {
+  color: var(--royal-purple);
+  margin-bottom: 0.5rem;
+}
+
+.cookie-type p {
+  color: var(--royal-black);
+  margin: 0;
+}
+
+/* Info Collection Grid */
+.info-collection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.collection-type {
+  background: var(--royal-white);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px var(--royal-shadow);
+  flex: 1;
+  min-width: 250px;
+  border-left: 4px solid var(--sprint-vibe);
+}
+
+.collection-type h4 {
+  color: var(--royal-purple);
+  margin-bottom: 0.5rem;
+}
+
+.collection-type p {
+  color: var(--royal-black);
+  margin: 0;
+}
+
+/* Responsive adjustments for legal pages */
+@media (max-width: 767px) {
+  .disclaimer-text,
+  .cookies-text,
+  .privacy-text {
+    padding: 1.5rem;
+  }
+
+  .cookie-types,
+  .info-collection {
+    flex-direction: column;
+  }
+
+  .cookie-type,
+  .collection-type {
+    min-width: 100%;
+  }
+}
+
+/* Game Demo Section Styles */
+.game-demo-section {
+  padding: 4rem 2rem;
+  background: var(--royal-white);
+  margin: 2rem 0;
+}
+
+.game-demo-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-demo-iframe {
+  width: 100%;
+  height: 70vh;
+  max-width: 1280px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px var(--royal-shadow);
+  background: var(--royal-white);
+}
+
+/* Royal Game Updates Section */
+.royal-game-updates {
+  padding: 4rem 2rem;
+  background: linear-gradient(var(--shadow-dark), var(--shadow-dark)),
+    url("../public/princess-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--royal-white);
+  margin: 2rem 0;
+  border-radius: 20px;
+}
+
+.royal-game-updates .section-title {
+  color: var(--royal-white);
+  text-shadow: 2px 2px 4px var(--royal-shadow);
+}
+
+.royal-updates-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.royal-update-card {
+  background: var(--overlay-light);
+  color: var(--royal-black);
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px var(--royal-shadow);
+  border-left: 4px solid var(--princess-pink);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.royal-update-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px var(--royal-shadow);
+}
+
+.royal-update-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--royal-purple);
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 2px var(--shadow-light);
+}
+
+.royal-update-date {
+  font-size: 0.9rem;
+  color: var(--princess-pink);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  opacity: 0.8;
+}
+
+.royal-update-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--royal-black);
+  margin: 0;
+}
+
+/* Princess Adventure Stories Section */
+.royal-princess-chronicles {
+  padding: 4rem 2rem;
+  background: linear-gradient(
+    135deg,
+    var(--royal-purple-transparent),
+    var(--princess-pink-transparent-2)
+  );
+  margin: 2rem 0;
+  border-radius: 20px;
+}
+
+.royal-princess-chronicles .section-title {
+  color: var(--royal-white);
+  text-shadow: 2px 2px 4px var(--royal-shadow);
+}
+
+.royal-chronicles-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.royal-chronicle-card {
+  background: var(--overlay-light);
+  color: var(--royal-black);
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px var(--royal-shadow);
+  border-left: 4px solid var(--royal-gold);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.royal-chronicle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px var(--royal-shadow);
+}
+
+.royal-chronicle-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--royal-purple);
+  margin-bottom: 0.5rem;
+}
+
+.royal-chronicle-author {
+  font-size: 0.9rem;
+  color: var(--princess-pink);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  font-style: italic;
+}
+
+.royal-chronicle-content {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--royal-black);
+  margin-bottom: 0.8rem;
+}
+
+.royal-chronicle-date {
+  font-size: 0.85rem;
+  color: var(--royal-purple);
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Contact Page Section Margins */
+.contact-info {
+  margin-bottom: 4rem;
+}
+
+.contact-form-section {
+  margin-bottom: 4rem;
+}
+
+.royal-location {
+  margin-bottom: 2rem;
+}
+
+/* Contact Details Grid */
+.contact-details {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.contact-detail-item {
+  background: var(--royal-white);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px var(--royal-shadow);
+  border-left: 4px solid var(--princess-pink);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  flex-direction: column;
+}
+
+.contact-detail-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px var(--royal-shadow);
+}
+
+.contact-detail-item h3 {
+  color: var(--royal-purple);
+  font-size: 1.3rem;
+
+  font-weight: 700;
+}
+
+.contact-detail-item p,
+.contact-detail-item a {
+  color: var(--royal-black);
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.contact-detail-item a:hover {
+  color: var(--princess-pink);
+}
+
+/* Cookie Banner Styles */
+.cookie-banner-main {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--royal-gradient);
+  color: var(--royal-white);
+  box-shadow: 0 -4px 20px var(--royal-shadow);
+  z-index: 9999;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cookie-banner-main.show {
+  transform: translateY(0);
+}
+
+.cookie-banner-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cookie-banner-text {
+  flex: 1;
+}
+
+.cookie-banner-text p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--royal-white);
+}
+
+.cookie-banner-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cookie-accept-button {
+  background: var(--royal-gold);
+  color: var(--royal-black);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px var(--royal-shadow);
+}
+
+.cookie-accept-button:hover {
+  background: var(--hover-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow-medium);
+}
+
+.cookie-accept-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Cookie Banner */
+@media (max-width: 768px) {
+  .cookie-banner-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .cookie-banner-text p {
+    font-size: 0.9rem;
+  }
+
+  .cookie-accept-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cookie-banner-content {
+    padding: 0.8rem;
+  }
+
+  .cookie-banner-text p {
+    font-size: 0.85rem;
+  }
+
+  .cookie-accept-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "contactDetails": {
+    "email": "princess@HyperPixelArena.com",
+    "phone": "+61 8 6553 2918",
+    "address": "5 Wattle Court Albany WA 6330 Australia"
+  },
+  "businessHours": {
+    "monday": "9:00 AM - 6:00 PM",
+    "tuesday": "9:00 AM - 6:00 PM",
+    "wednesday": "9:00 AM - 6:00 PM",
+    "thursday": "9:00 AM - 6:00 PM",
+    "friday": "9:00 AM - 6:00 PM",
+    "saturday": "10:00 AM - 4:00 PM",
+    "sunday": "Closed"
+  },
+  "departments": [
+    {
+      "name": "Game Support",
+      "email": "support@HyperPixelArena.com",
+      "phone": "+61 8 6553 2918",
+      "description": "Technical support and game-related questions"
+    },
+    {
+      "name": "Business Inquiries",
+      "email": "business@HyperPixelArena.com",
+      "phone": "+61 8 6553 2918",
+      "description": "Partnerships, licensing, and business opportunities"
+    },
+    {
+      "name": "Press & Media",
+      "email": "press@HyperPixelArena.com",
+      "phone": "+61 8 6553 2918",
+      "description": "Media inquiries, press releases, and interviews"
+    }
+  ],
+  "socialMedia": {
+    "facebook": "https://facebook.com/princessrun3d",
+    "twitter": "https://twitter.com/princessrun3d",
+    "instagram": "https://instagram.com/princessrun3d",
+    "youtube": "https://youtube.com/princessrun3d"
+  },
+  "faq": [
+    {
+      "question": "How do I download Princess Run 3D?",
+      "answer": "You can download Princess Run 3D from the App Store, Google Play Store, or our official website. The game is free to play with optional in-app purchases."
+    },
+    {
+      "question": "What devices are supported?",
+      "answer": "Princess Run 3D supports iOS 12.0+ and Android 7.0+. The game is optimized for both smartphones and tablets."
+    },
+    {
+      "question": "How do I unlock new outfits?",
+      "answer": "New outfits can be unlocked by playing the game, achieving high scores, completing achievements, or purchasing them with in-game currency."
+    },
+    {
+      "question": "Is the game suitable for children?",
+      "answer": "Yes! Princess Run 3D is designed to be family-friendly and suitable for players aged 13 and above. Parental guidance is recommended for younger players."
+    }
+  ]
+}

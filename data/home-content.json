@@ -1,0 +1,100 @@
+{
+  "features": [
+    {
+      "icon": "🏃‍♀️",
+      "title": "Endless Running Adventure",
+      "description": "Experience the thrill of endless running through beautifully crafted 3D worlds with dynamic obstacles and challenges."
+    },
+    {
+      "icon": "👗",
+      "title": "Fashion Collection",
+      "description": "Collect stunning princess dresses, elegant accessories, and magical items to enhance your royal appearance."
+    },
+    {
+      "icon": "✨",
+      "title": "Charisma System",
+      "description": "Level up your princess charisma by avoiding mud patches, collecting outfits, and performing stylish moves."
+    },
+    {
+      "icon": "🌧️",
+      "title": "Dynamic Weather",
+      "description": "Face changing weather conditions including rain, mud patches, and other environmental challenges."
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Princess Emma",
+      "text": "This game is absolutely magical! I love collecting all the beautiful dresses and the running mechanics are so smooth. Perfect for princess lovers!"
+    },
+    {
+      "name": "Royal Runner Sarah",
+      "text": "Addictive gameplay with stunning visuals! The charisma system makes every run exciting and the obstacles keep me coming back for more."
+    },
+    {
+      "name": "Gaming Queen Lisa",
+      "text": "Best endless runner I've played! The outfit collection feature is unique and the 3D graphics are beautiful. Highly recommended!"
+    },
+    {
+      "name": "Princess Mia",
+      "text": "I can't stop playing this game! The weather effects are amazing and avoiding mud while collecting dresses is so much fun."
+    },
+    {
+      "name": "Crown Princess Lily",
+      "text": "The royal atmosphere is incredible! Every detail from the music to the visual effects makes me feel like a true princess."
+    },
+    {
+      "name": "Royal Fashionista",
+      "text": "I can't stop playing! The combination of fashion collection and obstacle avoidance creates the perfect gaming experience."
+    }
+  ],
+  "items": [
+    {
+      "name": "Royal Crown",
+      "effect": "Increases charisma by 50% and provides temporary invincibility from mud patches."
+    },
+    {
+      "name": "Enchanted Dress",
+      "effect": "Grants double points for 30 seconds and attracts nearby collectible items."
+    },
+    {
+      "name": "Magic Necklace",
+      "effect": "Automatically collects outfits within a certain radius and boosts overall score."
+    },
+    {
+      "name": "Starlight Tiara",
+      "effect": "Creates a protective shield that repels mud and obstacles for 20 seconds."
+    }
+  ],
+  "stats": [
+    {
+      "value": "1,250,000",
+      "label": "Total Players"
+    },
+    {
+      "value": "4.8",
+      "label": "Average Rating"
+    },
+    {
+      "value": "50+",
+      "label": "Unique Outfits"
+    },
+    {
+      "value": "100+",
+      "label": "Achievements"
+    },
+    {
+      "value": "25+",
+      "label": "Royal Levels"
+    },
+    {
+      "value": "99.9%",
+      "label": "Uptime"
+    }
+  ],
+  "wardrobeInfo": [
+    "Discover the magical power of royal fashion items that enhance your princess abilities and unlock special bonuses during your endless running adventure.",
+    "Each outfit provides unique advantages, from increased charisma to special abilities that help you overcome obstacles and collect more treasures.",
+    "Build your royal wardrobe strategically to become the most fashionable and powerful princess in the kingdom.",
+    "Remember, true royal elegance comes from both style and substance - choose your outfits wisely!"
+  ]
+}
